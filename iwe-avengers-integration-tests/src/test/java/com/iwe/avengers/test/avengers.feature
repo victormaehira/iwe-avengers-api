@@ -22,11 +22,12 @@ Scenario: Delete a Avenger by Id
 
 Given path 'avengers', 'sdsa-sasa-asas-sasa'
 When method delete
-Then status 200
+Then status 204
 
 Scenario: Update a Avenger by Id
 
 Given path 'avengers', 'sdsa-sasa-asas-sasa'
-And request {name: 'Captain America', secretIdentity: 'Steve Rogers'}
+And request {name: 'Hulk', secretIdentity: 'Bruce'}
 When method put
 Then status 200
+And match response == {id: '#string', name: 'Hulk', secretIdentity: 'Bruce'}
