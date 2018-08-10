@@ -31,3 +31,19 @@ And request {name: 'Hulk', secretIdentity: 'Bruce'}
 When method put
 Then status 200
 And match response == {id: '#string', name: 'Hulk', secretIdentity: 'Bruce'}
+
+Scenario: Registry Avenger with Invalid Payload
+
+Given path 'avengers'
+And request {secretIdentity: 'Steve Rogers'}
+When method post
+Then status 400
+
+Scenario: Update Avenger with Invalid Payload
+
+Given path 'avengers', 'sdsa-sasa-asas-sasa'
+And request {secretIdentity: 'Steve Rogers'}
+When method put
+Then status 400
+
+
