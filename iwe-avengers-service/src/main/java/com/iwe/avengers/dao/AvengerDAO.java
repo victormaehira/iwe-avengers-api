@@ -20,14 +20,7 @@ public class AvengerDAO {
 		return newAvenger;
 	}
 
-	//passar Avenger
-	public void delete(String id) {
-		//Avenger avenger =  mapper.get(id);
-		//mapper.delete(id);
+	public void remove(Avenger avenger) {
+		mapper.delete(avenger);
 	}
-
-	public Avenger update(Avenger avenger) {
-		return null;
-	}
-
 }
