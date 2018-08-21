@@ -1,24 +1,24 @@
-19:30:24.415 karate.env system property was: null 
-19:30:24.814 request:
+21:25:19.457 karate.env system property was: null 
+21:25:19.839 request:
 1 > GET https://hrkxj65omb.execute-api.us-east-2.amazonaws.com/dev/avengers/invalid
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: hrkxj65omb.execute-api.us-east-2.amazonaws.com
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 
-19:30:32.792 response time in milliseconds: 7977
+21:25:20.980 response time in milliseconds: 1141
 1 < 404
 1 < Connection: keep-alive
 1 < Content-Length: 319
 1 < Content-Type: application/json
-1 < Date: Mon, 20 Aug 2018 22:30:32 GMT
-1 < X-Amzn-Trace-Id: Root=1-5b7b4101-06c0e15762d996093a29f751;Sampled=0
-1 < x-amz-apigw-id: L8cYSEB2iYcFb_g=
-1 < x-amzn-RequestId: a24d0166-a4c8-11e8-bfa3-ef1a02612c59
+1 < Date: Tue, 21 Aug 2018 00:25:20 GMT
+1 < X-Amzn-Trace-Id: Root=1-5b7b5bf0-96c9c80c3c14fae157020d04;Sampled=0
+1 < x-amz-apigw-id: L8tNnEl0CYcFb_g=
+1 < x-amzn-RequestId: b0013391-a4d8-11e8-bfa3-ef1a02612c59
 {"errorMessage":"[NotFound] - Avenger id: invalid not found","errorType":"com.iwe.avenger.lambda.exception.AvengerNotFoundException","stackTrace":["com.iwe.avengers.SearchAvengersHandler.handleRequest(SearchAvengersHandler.java:27)","com.iwe.avengers.SearchAvengersHandler.handleRequest(SearchAvengersHandler.java:1)"]}
 
-19:30:32.825 karate.env system property was: null 
-19:30:32.838 request:
+21:25:21.014 karate.env system property was: null 
+21:25:21.027 request:
 1 > POST https://hrkxj65omb.execute-api.us-east-2.amazonaws.com/dev/avengers
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -28,96 +28,178 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"name":"Captain America","secretIdentity":"Steve Rogers"}
 
-19:30:39.868 response time in milliseconds: 7029
+21:25:21.753 response time in milliseconds: 726
 1 < 201
 1 < Connection: keep-alive
 1 < Content-Length: 102
 1 < Content-Type: application/json
-1 < Date: Mon, 20 Aug 2018 22:30:39 GMT
-1 < X-Amzn-Trace-Id: Root=1-5b7b4109-430f365881d68e48ad8a392c;Sampled=0
-1 < x-amz-apigw-id: L8cZdEtaiYcFdlQ=
-1 < x-amzn-RequestId: a6c2f8e8-a4c8-11e8-9324-ff89c8144454
-{"id":"2b5cbf53-b340-424f-932e-45dd773846a1","name":"Captain America","secretIdentity":"Steve Rogers"}
+1 < Date: Tue, 21 Aug 2018 00:25:21 GMT
+1 < X-Amzn-Trace-Id: Root=1-5b7b5bf1-65cfdbf29e90c831bb973ac5;Sampled=0
+1 < x-amz-apigw-id: L8tNuHlcCYcFdUw=
+1 < x-amzn-RequestId: b06c03e9-a4d8-11e8-bf29-e904c5f1458e
+{"id":"333929ab-b951-48c0-8c7b-713c6fd3fa75","name":"Captain America","secretIdentity":"Steve Rogers"}
 
-19:30:39.879 request:
-2 > GET https://hrkxj65omb.execute-api.us-east-2.amazonaws.com/dev/avengers/2b5cbf53-b340-424f-932e-45dd773846a1
+21:25:21.764 request:
+2 > GET https://hrkxj65omb.execute-api.us-east-2.amazonaws.com/dev/avengers/333929ab-b951-48c0-8c7b-713c6fd3fa75
 2 > Accept-Encoding: gzip,deflate
 2 > Connection: Keep-Alive
 2 > Host: hrkxj65omb.execute-api.us-east-2.amazonaws.com
 2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 
-19:30:40.527 response time in milliseconds: 648
+21:25:22.282 response time in milliseconds: 518
 2 < 200
 2 < Connection: keep-alive
 2 < Content-Length: 102
 2 < Content-Type: application/json
-2 < Date: Mon, 20 Aug 2018 22:30:40 GMT
-2 < X-Amzn-Trace-Id: Root=1-5b7b4110-70a335c418fb14c4bd64b84e;Sampled=0
-2 < x-amz-apigw-id: L8cajErFCYcFx5w=
-2 < x-amzn-RequestId: aaf7a1b4-a4c8-11e8-8a8c-b74e277686c0
-{"id":"2b5cbf53-b340-424f-932e-45dd773846a1","name":"Captain America","secretIdentity":"Steve Rogers"}
+2 < Date: Tue, 21 Aug 2018 00:25:22 GMT
+2 < X-Amzn-Trace-Id: Root=1-5b7b5bf2-5348cc9bec3801b436295684;Sampled=0
+2 < x-amz-apigw-id: L8tN1GT3iYcF9Yw=
+2 < x-amzn-RequestId: b0dc5129-a4d8-11e8-8913-53748b27eea0
+{"id":"333929ab-b951-48c0-8c7b-713c6fd3fa75","name":"Captain America","secretIdentity":"Steve Rogers"}
 
-19:30:40.537 karate.env system property was: null 
-19:30:40.541 request:
-1 > DELETE https://hrkxj65omb.execute-api.us-east-2.amazonaws.com/dev/avengers/sdsa-sasa-asas-sasa
+21:25:22.292 karate.env system property was: null 
+21:25:22.295 request:
+1 > POST https://hrkxj65omb.execute-api.us-east-2.amazonaws.com/dev/avengers
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
+1 > Content-Length: 47
+1 > Content-Type: application/json; charset=UTF-8
 1 > Host: hrkxj65omb.execute-api.us-east-2.amazonaws.com
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+{"name":"Hulk","secretIdentity":"Bruce Banner"}
 
-19:30:43.305 response time in milliseconds: 2764
-1 < 204
+21:25:22.836 response time in milliseconds: 540
+1 < 201
 1 < Connection: keep-alive
-1 < Content-Length: 0
+1 < Content-Length: 91
 1 < Content-Type: application/json
-1 < Date: Mon, 20 Aug 2018 22:30:43 GMT
-1 < X-Amzn-Trace-Id: Root=1-5b7b4111-7ff198fc19ab8e9cfcff0420;Sampled=0
-1 < x-amz-apigw-id: L8caqFCNCYcFeew=
-1 < x-amzn-RequestId: ab5eef8a-a4c8-11e8-96cd-192d15003102
+1 < Date: Tue, 21 Aug 2018 00:25:22 GMT
+1 < X-Amzn-Trace-Id: Root=1-5b7b5bf2-ca75e126adc273fdab7eee98;Sampled=0
+1 < x-amz-apigw-id: L8tN7GLqiYcFxXw=
+1 < x-amzn-RequestId: b130da89-a4d8-11e8-9bb9-394b703069f9
+{"id":"46636d94-a599-4f68-af8e-9255dbf2ef71","name":"Hulk","secretIdentity":"Bruce Banner"}
 
-19:30:43.314 karate.env system property was: null 
-19:30:43.316 request:
-1 > DELETE https://hrkxj65omb.execute-api.us-east-2.amazonaws.com/dev/avengers/invalid
+21:25:22.841 request:
+2 > DELETE https://hrkxj65omb.execute-api.us-east-2.amazonaws.com/dev/avengers/46636d94-a599-4f68-af8e-9255dbf2ef71
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: hrkxj65omb.execute-api.us-east-2.amazonaws.com
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+
+21:25:23.774 response time in milliseconds: 933
+2 < 204
+2 < Connection: keep-alive
+2 < Content-Length: 0
+2 < Content-Type: application/json
+2 < Date: Tue, 21 Aug 2018 00:25:23 GMT
+2 < X-Amzn-Trace-Id: Root=1-5b7b5bf3-6085b5d61e1a4914b79c0236;Sampled=0
+2 < x-amz-apigw-id: L8tOAFGXCYcF_CQ=
+2 < x-amzn-RequestId: b1800b56-a4d8-11e8-acd0-45d44e3a73c2
+
+21:25:23.776 request:
+3 > GET https://hrkxj65omb.execute-api.us-east-2.amazonaws.com/dev/avengers/46636d94-a599-4f68-af8e-9255dbf2ef71
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Host: hrkxj65omb.execute-api.us-east-2.amazonaws.com
+3 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+
+21:25:24.297 response time in milliseconds: 521
+3 < 404
+3 < Connection: keep-alive
+3 < Content-Length: 348
+3 < Content-Type: application/json
+3 < Date: Tue, 21 Aug 2018 00:25:24 GMT
+3 < X-Amzn-Trace-Id: Root=1-5b7b5bf4-bd8e13e86611cb4d6e235dba;Sampled=0
+3 < x-amz-apigw-id: L8tOJGMlCYcF59Q=
+3 < x-amzn-RequestId: b20df380-a4d8-11e8-9add-85cca329294d
+{"errorMessage":"[NotFound] - Avenger id: 46636d94-a599-4f68-af8e-9255dbf2ef71 not found","errorType":"com.iwe.avenger.lambda.exception.AvengerNotFoundException","stackTrace":["com.iwe.avengers.SearchAvengersHandler.handleRequest(SearchAvengersHandler.java:27)","com.iwe.avengers.SearchAvengersHandler.handleRequest(SearchAvengersHandler.java:1)"]}
+
+21:25:24.307 karate.env system property was: null 
+21:25:24.311 request:
+1 > DELETE https://hrkxj65omb.execute-api.us-east-2.amazonaws.com/dev/avengers/sss-ddd-fff-eee
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: hrkxj65omb.execute-api.us-east-2.amazonaws.com
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 
-19:30:44.107 response time in milliseconds: 790
+21:25:24.841 response time in milliseconds: 530
+1 < 404
+1 < Connection: keep-alive
+1 < Content-Length: 323
+1 < Content-Type: application/json
+1 < Date: Tue, 21 Aug 2018 00:25:24 GMT
+1 < X-Amzn-Trace-Id: Root=1-5b7b5bf4-ed8b0de3d60910ed6a3cd7f3;Sampled=0
+1 < x-amz-apigw-id: L8tOPHDRiYcFz_w=
+1 < x-amzn-RequestId: b261b892-a4d8-11e8-b1c8-41a7bf3636f6
+{"errorMessage":"[NotFound] - Avenger id: sss-ddd-fff-eee not found","errorType":"com.iwe.avenger.lambda.exception.AvengerNotFoundException","stackTrace":["com.iwe.avengers.RemoveAvengerHandler.handleRequest(RemoveAvengerHandler.java:28)","com.iwe.avengers.RemoveAvengerHandler.handleRequest(RemoveAvengerHandler.java:1)"]}
+
+21:25:24.850 karate.env system property was: null 
+21:25:24.853 request:
+1 > POST https://hrkxj65omb.execute-api.us-east-2.amazonaws.com/dev/avengers
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 43
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: hrkxj65omb.execute-api.us-east-2.amazonaws.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+{"name":"Captain","secretIdentity":"Steve"}
+
+21:25:25.372 response time in milliseconds: 519
+1 < 201
+1 < Connection: keep-alive
+1 < Content-Length: 87
+1 < Content-Type: application/json
+1 < Date: Tue, 21 Aug 2018 00:25:25 GMT
+1 < X-Amzn-Trace-Id: Root=1-5b7b5bf5-604faa2a94eb137e256b3976;Sampled=0
+1 < x-amz-apigw-id: L8tOUGMtCYcFxXw=
+1 < x-amzn-RequestId: b2b3f82d-a4d8-11e8-9bb9-394b703069f9
+{"id":"85edc902-6585-4c68-9d63-76b8e15e9b48","name":"Captain","secretIdentity":"Steve"}
+
+21:25:25.385 request:
+2 > PUT https://hrkxj65omb.execute-api.us-east-2.amazonaws.com/dev/avengers/85edc902-6585-4c68-9d63-76b8e15e9b48
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Content-Length: 58
+2 > Content-Type: application/json; charset=UTF-8
+2 > Host: hrkxj65omb.execute-api.us-east-2.amazonaws.com
+2 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+{"name":"Captain America","secretIdentity":"Steve Rogers"}
+
+21:25:26.178 response time in milliseconds: 792
+2 < 200
+2 < Connection: keep-alive
+2 < Content-Length: 102
+2 < Content-Type: application/json
+2 < Date: Tue, 21 Aug 2018 00:25:26 GMT
+2 < X-Amzn-Trace-Id: Root=1-5b7b5bf5-eee38e7c6b276c026b5d1c86;Sampled=0
+2 < x-amz-apigw-id: L8tOaGNRiYcF59Q=
+2 < x-amzn-RequestId: b304b039-a4d8-11e8-9add-85cca329294d
+{"id":"85edc902-6585-4c68-9d63-76b8e15e9b48","name":"Captain America","secretIdentity":"Steve Rogers"}
+
+21:25:26.192 karate.env system property was: null 
+21:25:26.197 request:
+1 > PUT https://hrkxj65omb.execute-api.us-east-2.amazonaws.com/dev/avengers/nao-existo
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 58
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: hrkxj65omb.execute-api.us-east-2.amazonaws.com
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
+{"name":"Captain America","secretIdentity":"Steve Rogers"}
+
+21:25:26.756 response time in milliseconds: 559
 1 < 404
 1 < Connection: keep-alive
 1 < Content-Length: 322
 1 < Content-Type: application/json
-1 < Date: Mon, 20 Aug 2018 22:30:44 GMT
-1 < X-Amzn-Trace-Id: Root=1-5b7b4113-ab4ea8e6a1bf633e40e28e41;Sampled=0
-1 < x-amz-apigw-id: L8cbFF-HCYcFttw=
-1 < x-amzn-RequestId: ad01c9b6-a4c8-11e8-93ef-b3f738364644
-{"errorMessage":"[NotFound] DELETE - Avenger id: invalid not found","errorType":"com.iwe.avenger.lambda.exception.AvengerNotFoundException","stackTrace":["com.iwe.avengers.RemoveAvengerHandler.handleRequest(RemoveAvengerHandler.java:23)","com.iwe.avengers.RemoveAvengerHandler.handleRequest(RemoveAvengerHandler.java:1)"]}
+1 < Date: Tue, 21 Aug 2018 00:25:26 GMT
+1 < X-Amzn-Trace-Id: Root=1-5b7b5bf6-f661e3dc7a614d81dbbc204f;Sampled=0
+1 < x-amz-apigw-id: L8tOiHDDCYcF_kw=
+1 < x-amzn-RequestId: b38418dc-a4d8-11e8-8c55-1b9a3cf0f517
+{"errorMessage":"[NotFound] - Avenger id: nao-existo not found","errorType":"com.iwe.avenger.lambda.exception.AvengerNotFoundException","stackTrace":["com.iwe.avengers.UpdateAvengersHandler.handleRequest(UpdateAvengersHandler.java:24)","com.iwe.avengers.UpdateAvengersHandler.handleRequest(UpdateAvengersHandler.java:1)"]}
 
-19:30:44.116 karate.env system property was: null 
-19:30:44.118 request:
-1 > PUT https://hrkxj65omb.execute-api.us-east-2.amazonaws.com/dev/avengers/sdsa-sasa-asas-sasa
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Length: 40
-1 > Content-Type: application/json; charset=UTF-8
-1 > Host: hrkxj65omb.execute-api.us-east-2.amazonaws.com
-1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
-{"name":"Hulk","secretIdentity":"Bruce"}
-
-19:30:46.665 response time in milliseconds: 2545
-1 < 200
-1 < Connection: keep-alive
-1 < Content-Length: 67
-1 < Content-Type: application/json
-1 < Date: Mon, 20 Aug 2018 22:30:46 GMT
-1 < X-Amzn-Trace-Id: Root=1-5b7b4114-7c0b872c5b3e31e3cee4b3b2;Sampled=0
-1 < x-amz-apigw-id: L8cbNHsiiYcFl4w=
-1 < x-amzn-RequestId: ad7d89ad-a4c8-11e8-9c7e-13b2e7b0190b
-{"id":"sdsa-sasa-asas-sasa","name":"Hulk","secretIdentity":"Bruce"}
-
-19:30:46.674 karate.env system property was: null 
-19:30:46.676 request:
+21:25:26.764 karate.env system property was: null 
+21:25:26.767 request:
 1 > POST https://hrkxj65omb.execute-api.us-east-2.amazonaws.com/dev/avengers
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -127,18 +209,18 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"secretIdentity":"Steve Rogers"}
 
-19:30:47.209 response time in milliseconds: 531
+21:25:27.269 response time in milliseconds: 502
 1 < 400
 1 < Connection: keep-alive
 1 < Content-Length: 35
 1 < Content-Type: application/json
-1 < Date: Mon, 20 Aug 2018 22:30:47 GMT
-1 < x-amz-apigw-id: L8cbnFuZCYcFhtw=
-1 < x-amzn-RequestId: af038d2f-a4c8-11e8-a7a1-9d109380411e
+1 < Date: Tue, 21 Aug 2018 00:25:27 GMT
+1 < x-amz-apigw-id: L8tOnGR3iYcFzVw=
+1 < x-amzn-RequestId: b3d79018-a4d8-11e8-8ef7-f55bab18e508
 {"message": "Invalid request body"}
 
-19:30:47.217 karate.env system property was: null 
-19:30:47.220 request:
+21:25:27.278 karate.env system property was: null 
+21:25:27.284 request:
 1 > PUT https://hrkxj65omb.execute-api.us-east-2.amazonaws.com/dev/avengers/sdsa-sasa-asas-sasa
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -148,98 +230,18 @@
 1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
 {"secretIdentity":"Steve Rogers"}
 
-19:30:47.776 response time in milliseconds: 556
+21:25:27.791 response time in milliseconds: 507
 1 < 400
 1 < Connection: keep-alive
 1 < Content-Length: 35
 1 < Content-Type: application/json
-1 < Date: Mon, 20 Aug 2018 22:30:47 GMT
-1 < x-amz-apigw-id: L8cbtEuwiYcFf9w=
-1 < x-amzn-RequestId: af59279b-a4c8-11e8-bd45-831404d35c32
+1 < Date: Tue, 21 Aug 2018 00:25:27 GMT
+1 < x-amz-apigw-id: L8tOtEtzCYcFVBQ=
+1 < x-amzn-RequestId: b427fa2e-a4d8-11e8-a532-452b2055d9ef
 {"message": "Invalid request body"}
 
-s.com/dev/avengers
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Length: 33
-1 > Content-Type: application/json; charset=UTF-8
-1 > Host: hrkxj65omb.execute-api.us-east-2.amazonaws.com
-1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
-{"secretIdentity":"Steve Rogers"}
 
-21:41:53.361 response time in milliseconds: 511
-1 < 400
-1 < Connection: keep-alive
-1 < Content-Length: 35
-1 < Content-Type: application/json
-1 < Date: Fri, 17 Aug 2018 00:41:53 GMT
-1 < x-amz-apigw-id: Lvj4sHJ-CYcFzqw=
-1 < x-amzn-RequestId: 55efaa5b-a1b6-11e8-a4aa-a30dcb107c6f
-{"message": "Invalid request body"}
-
-21:41:53.369 karate.env system property was: null 
-21:41:53.371 request:
-1 > PUT https://hrkxj65omb.execute-api.us-east-2.amazonaws.com/dev/avengers/sdsa-sasa-asas-sasa
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Length: 33
-1 > Content-Type: application/json; charset=UTF-8
-1 > Host: hrkxj65omb.execute-api.us-east-2.amazonaws.com
-1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_112)
-{"secretIdentity":"Steve Rogers"}
-
-21:41:53.870 response time in milliseconds: 499
-1 < 400
-1 < Connection: keep-alive
-1 < Content-Length: 35
-1 < Content-Type: application/json
-1 < Date: Fri, 17 Aug 2018 00:41:53 GMT
-1 < x-amz-apigw-id: Lvj4xHW4CYcFsvQ=
-1 < x-amzn-RequestId: 563d7ce3-a1b6-11e8-8084-6191b3ab6d6b
-{"message": "Invalid request body"}
-
-/registration/index.html?nc2=h_ct" style="min-width:105px;">Sign Up</a> 
-     </div> 
-    </div> 
-    <div class="aws-nav-popover-trigger" data-dropdown="aws-nav-dropdown-account"> 
-     <span>My Account</span> 
-     <i class="icon-caret-down"></i> 
-    </div> 
-    <div class="aws-nav-popover-trigger" data-dropdown="aws-nav-dropdown-lang" data-language="en"> 
-     <span>English</span> 
-     <i class="icon-caret-down"></i> 
-    </div> 
-    <div id="aws-nav-quicklinks-separator" class="aws-nav-quicklinks-separator"> 
-     <div class="aws-nav-left"></div> 
-     <div class="aws-nav-right"></div> 
-    </div> 
-   </div> 
-  </div> 
-  <div id="aws-nav-dropdown-quicklinks" class="aws-nav-popover"> 
-   <ul> 
-   </ul> 
-   <div class="aws-nav-popover-arrow"></div> 
-   <div class="aws-nav-popover-arrow-inner"></div> 
-  </div> 
-  <div class="aws-nav-popover" data-popover-anchor="aws-nav-flyout-trigger" data-wait-to-show-duration="200" data-close-on-document-click="true" data-auto-close-duration="10000" data-only-first-visit="true" style="min-width: 260px; max-width: 260px;"> 
-   <span>Explore AWS solutions and products</span> 
-   <i class="aws-nav-popover-close"></i> 
-   <div class="aws-nav-popover-arrow"></div> 
-   <div class="aws-nav-popover-arrow-inner"></div> 
-  </div> 
-  <div id="aws-nav-dropdown-lang" class="aws-nav-popover"> 
-   <ul> 
-    <li data-language="id"><a href="https://aws.amazon.com/id/?nc1=h_ls" data-language="id">Bahasa Indonesia</a></li> 
-    <li data-language="de"><a href="https://aws.amazon.com/de/?nc1=h_ls" data-language="de">Deutsch</a></li> 
-    <li data-language="en"><a href="https://aws.amazon.com/?nc1=h_ls" data-language="en">English</a></li> 
-    <li data-language="es"><a href="https://aws.amazon.com/es/?nc1=h_ls" data-language="es">Espa&ntilde;ol</a></li> 
-    <li data-language="fr"><a href="https://aws.amazon.com/fr/?nc1=h_ls" data-language="fr">Fran&ccedil;ais</a></li> 
-    <li data-language="it"><a href="https://aws.amazon.com/it/?nc1=h_ls" data-language="it">Italiano</a></li> 
-    <li data-language="pt"><a href="https://aws.amazon.com/pt/?nc1=h_ls" data-language="pt">Portugu&ecirc;s</a></li> 
-    <li data-language="vi"><a href="https://aws.amazon.com/vi/?nc1=f_ls" data-language="vi">Tiếng Việt</a></li> 
-    <li data-language="tr"><a href="https://aws.amazon.com/tr/?nc1=h_ls" data-language="tr">T&uuml;rk&ccedil;e</a></li> 
-    <li data-language="ru"><a href="https://aws.amazon.com/ru/?nc1=h_ls" data-language="ru">Ρусский</a></li> 
-    <li data-language="jp"><a href="https://aws.amazon.com/jp/?nc1=h_ls" data-language="jp">日本語</a></li> 
+ href="https://aws.amazon.com/jp/?nc1=h_ls" data-language="jp">日本語</a></li> 
     <li data-language="ko"><a href="https://aws.amazon.com/ko/?nc1=h_ls" data-language="ko">한국어</a></li> 
     <li data-language="cn"><a href="https://aws.amazon.com/cn/?nc1=h_ls" data-language="cn">中文 (简体)</a></li> 
     <li data-language="tw"><a href="https://aws.amazon.com/tw/?nc1=h_ls" data-language="tw">中文 (繁體)</a></li> 
